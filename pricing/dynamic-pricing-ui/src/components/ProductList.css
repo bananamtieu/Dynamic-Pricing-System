@@ -1,0 +1,141 @@
+/* ProductList.css */
+
+.product-list-container {
+    min-height: 100vh;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+  
+.product-list-wrapper {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+}
+  
+.product-list-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+  
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+.product-table th {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+  
+.product-table td {
+    padding: 12px;
+    border-bottom: 1px solid #d1d5db;
+}
+  
+.product-table tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+  
+.product-table tr:hover {
+    background-color: #e5e7eb;
+    transition: background 0.2s ease-in-out;
+}
+
+/* ✅ Styling for Sort & Filter Controls */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+  
+.sort-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+  
+.sort-btn:hover {
+    background-color: #45a049;
+}
+  
+.filter-dropdown {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Ensure icons are properly styled */
+.icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+  
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.price-up, .price-down {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* Space between price and arrow */
+}
+
+/* Price increases: Red */
+.price-up {
+    color: red;
+}
+
+/* Price decreases: Green */
+.price-down {
+    color: green;
+}
+
+/* No change: Neutral color */
+.price-neutral {
+    display: flex;
+    align-items: center;
+    color: #333; /* Dark gray */
+}
+
+/* Adjust arrow size */
+.trend-arrow {
+    font-size: 1.2em;
+}
+  
+/* ✅ Styling for Trend Button */
+.trend-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+  
+.trend-btn:hover {
+    background-color: #0056b3;
+}
